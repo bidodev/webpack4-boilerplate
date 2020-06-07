@@ -31,14 +31,14 @@ module.exports = {
       //style and css extract
       {
         test: [/.css$|.scss$/],
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader", {
+        use: [MiniCssExtractPlugin.loader, "css-loader",  {
           loader: 'postcss-loader',
           options: {
             plugins: () => [require('autoprefixer')({
               'browsers': ['> 1%', 'last 2 versions']
             })],
           }
-        }]
+        }, "sass-loader"]
       },
       //image file loader
       {
