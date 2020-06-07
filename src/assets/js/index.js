@@ -1,4 +1,4 @@
-import "@scss/styles.scss";
+import "@scss/main.scss";
 import logoImg from "@img/logo.png";
 
 

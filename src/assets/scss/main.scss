@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+// 1. Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// 2. Import Fontawesome
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+
+// 3. Normalize CSS
+// https://necolas.github.io/normalize.css/
+@import '~normalize.css';
+
+// 4. Configuration and helpers
+@import "abstracts/variables", "abstracts/functions", "abstracts/mixins";
+
+// 5. Base stuff
+@import "base/base", "base/fonts", "base/typography", "base/helpers";
+
+// 6. Layout-related sections
+@import "layout/header", "layout/footer";
+
+// 7. Components
+@import "components/button";
+
+// 8. Page-specific styles
+@import "pages/home";
+
+// 9. Themes
+@import "themes/default";
+
+// 10. Others
+@import "custom";
+
